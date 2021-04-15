@@ -1,0 +1,35 @@
+* PSoft - Laboratório 6 - Sistema de vacinação contra o COVID-19
+** Para rodar:
+  #+BEGIN_SRC shell
+  $ cd psoft-lab6
+  $ javac *.java
+  $ java Main
+  #+END_SRC
+
+** Sobre o sistema
+   Para qualificar-se para receber a primeira dose da vacina, cada pessoa cadastrada precisa receber uma habilitação que depende de sua profissão, comorbidades e idade.
+   Por padrão, ao iniciar o sistema, se a pessoa cadastrada tiver tiver um dos seguintes requisitos, receberá a habilitação.
+   - Idade maior ou igual a 60 anos
+   - Profissão: médico
+   - Comorbidades incluindo: hipertensão
+   Esses requisitos podem ser alterados pelo sistema.
+   Os requisitos de profissão e comorbidades são representados por listas que se incluirem um ou mais dos atributos da pessoa cadastrada, tornará-la habilitada.
+   
+   *Aviso:* Qualquer alteração em dados cadastrados (sejam os requisitos ou dados do cadastro de pessoas) irão sobrescrever os passados.
+   
+   Quando uma lista é requisitada (profissões, comorbidades) é necessário separar cada item por uma única vírgula, sem espaço.
+   
+   Exemplo de cadastro de pessoa:
+   #+BEGIN_SRC shell
+   Nome completo: João Augusto da Silva
+   Idade: 55
+   CPF: 88888888888
+   Número do cartão do SUS: 7878787
+   E-mail: joao.augusto@hotmail.com
+   Telefone: (83) 3333-3333
+   Profissão: professor
+   Comorbidades (separar por vírgula): hipertensão,asma
+   
+   Cadastro concluído. Sua situação atual é: Habilitada para a primeira dose da vacina
+   #+END_SRC
+   Os dados do cadastro também podem ser alterados pelo sistema.
